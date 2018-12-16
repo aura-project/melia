@@ -3,7 +3,7 @@
 //
 //      File: ObjectPropertyNames
 //   Authors: 
-//   Version: i221666
+//   Version: i232364
 //   Purpose: 
 //  Category: 
 // File Mask: 
@@ -332,6 +332,7 @@ string getPropertyName(int id)
         case 102303: return "ColonyWarFirstEntryReward";
         case 102304: return "ColonyWarFirstVictoryReward";
         case 102773: return "LIMESTONECAVE711_EVENT1_COUNT";
+        case 103128: return "GUILD_QUEST_CLEAR_COUNT";
         case 6299: return "MaxPVPGrade";
         case 6300: return "Medal";
         case 6301: return "SelectedBarrack";
@@ -1335,6 +1336,34 @@ string getPropertyName(int id)
         case 103107: return "EVENT_1810_FALL_LEAF_DAY_STATE";
         case 103108: return "COLLECT_100_REWARD";
         case 103109: return "EVENT_1810_FALL_LEAF_DAY_DATE";
+        case 103112: return "EVENT_1810_GUILD_CARD_COUNT";
+        case 103113: return "TEAM_GUILD_QUEST_WEEK1_POINT";
+        case 103114: return "EVENT_1810_GUILD_QUEST_SUCCESS_COUNT";
+        case 103115: return "EVENT_1810_GUILD_WEEK_REWARD_COUNT";
+        case 103116: return "TEAM_GUILD_QUEST_WEEK1_COMPLETE_DATE";
+        case 103121: return "KOR_COLONY_BETA_REWARD2_DAYCHECK";
+        case 103122: return "KOR_COLONY_BETA_REWARD1_DAYCHECK";
+        case 103123: return "KOR_COLONY_BETA_OCCUPATION_REWARD_DAYCHECK";
+        case 103126: return "EVENT_1810_GUILD_BUFF_CHECK";
+        case 103129: return "EVENT_1810_HALLOWEEN_ACC_REWARD";
+        case 103130: return "EVENT_1810_HALLOWEEN_ACC_COUNT";
+        case 103131: return "EVENT_1810_HALLOWEEN_DAY_COUNT";
+        case 103132: return "GUILD_INVENTORY_DAY_ENTER_DATE";
+        case 103133: return "GUILD_INVENTORY_COLONY_ENTER_DATE";
+        case 103134: return "EVENT_1810_HALLOWEEN_DATE";
+        case 103136: return "KOR_COLONY_BETA2_ENTRY_REWARD_DAYCHECK";
+        case 103137: return "KOR_COLONY_BETA2_REWARD_DAYCHECK";
+        case 103138: return "KOR_COLONY_BETA2_ENTRY_REWARD_COUNT";
+        case 103139: return "Guild_Colony_Honor_Reward_DayCheck";
+        case 103140: return "STEAM_EVENT_INVITE_FRIEND_SAVIOR_LV_181030";
+        case 103141: return "STEAM_EVENT_INVITE_FRIEND_ROOKIE_LV_181030";
+        case 103249: return "EVENT_STEAM_FISHING_TALT_1";
+        case 103250: return "EVENT_STEAM_FISHING_TALT_5";
+        case 103251: return "EVENT_STEAM_FISHING_TALT_4";
+        case 103252: return "EVENT_STEAM_FISHING_TALT_3";
+        case 103253: return "EVENT_STEAM_FISHING_TALT_2";
+        case 103254: return "EVENT_STEAM_FISHING_TALT_6";
+        case 103267: return "EVENT_STEAM_TPSHOP_BUY_PRICE";
         case 6305: return "MonDmgRate";
         case 6306: return "BaseOffset";
         case 6307: return "QuestCount2";
@@ -10143,6 +10172,7 @@ string getPropertyName(int id)
         case 103102: return "BerniceShard_Dungeon_Save_Stage";
         case 103103: return "Pose_MAGICAL";
         case 103104: return "InDunRewardCountType_800";
+        case 103127: return "GuildColonyWarpFlag";
         case 7227: return "Desc";
         case 7228: return "Icon";
         case 7229: return "RefreshScp";
@@ -10551,6 +10581,10 @@ string getPropertyName(int id)
         case 103064: return "RareOption_MSPD";
         case 103088: return "TempUseItem";
         case 103097: return "SkillWidthRange";
+        case 103119: return "DynamicLifeTime";
+        case 103120: return "DynamicCalcLifeTimeFunc";
+        case 103124: return "ItemGuildCoolDown";
+        case 103125: return "GuildCoolDownGroup";
         case 0: return "UseLevelLimit";
         case 1: return "MinLv";
         case 2: return "IsPrivate";
@@ -17403,6 +17437,10 @@ string getPropertyName(int id)
         case 103100: return "COLLECT_50_REWARD";
         case 103110: return "EVENT_1810_UNIQUE_PC_YDAY";
         case 103111: return "EVENT_1810_UNIQUE_PC_STATE";
+        case 103117: return "GUILD_QUEST_WEEK1";
+        case 103118: return "GUILD_QUEST_WEEK1_R";
+        case 103135: return "MG_Last_MISSION_UPHILL_DEFFENSE_EVENT_1810";
+        case 103268: return "EVENT_1812_STEAM_RESET";
         default: return "Unknown";
     }
 }

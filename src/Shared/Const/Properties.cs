@@ -1014,6 +1014,34 @@ namespace Melia.Shared.Const
 			public const int EVENT_1810_FALL_LEAF_DAY_STATE = 103107;
 			public const int COLLECT_100_REWARD = 103108;
 			public const int EVENT_1810_FALL_LEAF_DAY_DATE = 103109;
+			public const int EVENT_1810_GUILD_CARD_COUNT = 103112;
+			public const int TEAM_GUILD_QUEST_WEEK1_POINT = 103113;
+			public const int EVENT_1810_GUILD_QUEST_SUCCESS_COUNT = 103114;
+			public const int EVENT_1810_GUILD_WEEK_REWARD_COUNT = 103115;
+			public const int TEAM_GUILD_QUEST_WEEK1_COMPLETE_DATE = 103116;
+			public const int KOR_COLONY_BETA_REWARD2_DAYCHECK = 103121;
+			public const int KOR_COLONY_BETA_REWARD1_DAYCHECK = 103122;
+			public const int KOR_COLONY_BETA_OCCUPATION_REWARD_DAYCHECK = 103123;
+			public const int EVENT_1810_GUILD_BUFF_CHECK = 103126;
+			public const int EVENT_1810_HALLOWEEN_ACC_REWARD = 103129;
+			public const int EVENT_1810_HALLOWEEN_ACC_COUNT = 103130;
+			public const int EVENT_1810_HALLOWEEN_DAY_COUNT = 103131;
+			public const int GUILD_INVENTORY_DAY_ENTER_DATE = 103132;
+			public const int GUILD_INVENTORY_COLONY_ENTER_DATE = 103133;
+			public const int EVENT_1810_HALLOWEEN_DATE = 103134;
+			public const int KOR_COLONY_BETA2_ENTRY_REWARD_DAYCHECK = 103136;
+			public const int KOR_COLONY_BETA2_REWARD_DAYCHECK = 103137;
+			public const int KOR_COLONY_BETA2_ENTRY_REWARD_COUNT = 103138;
+			public const int Guild_Colony_Honor_Reward_DayCheck = 103139;
+			public const int STEAM_EVENT_INVITE_FRIEND_SAVIOR_LV_181030 = 103140;
+			public const int STEAM_EVENT_INVITE_FRIEND_ROOKIE_LV_181030 = 103141;
+			public const int EVENT_STEAM_FISHING_TALT_1 = 103249;
+			public const int EVENT_STEAM_FISHING_TALT_5 = 103250;
+			public const int EVENT_STEAM_FISHING_TALT_4 = 103251;
+			public const int EVENT_STEAM_FISHING_TALT_3 = 103252;
+			public const int EVENT_STEAM_FISHING_TALT_2 = 103253;
+			public const int EVENT_STEAM_FISHING_TALT_6 = 103254;
+			public const int EVENT_STEAM_TPSHOP_BUY_PRICE = 103267;
 		}
 
 		public static class Monster
@@ -9842,6 +9870,7 @@ namespace Melia.Shared.Const
 			public const int BerniceShard_Dungeon_Save_Stage = 103102;
 			public const int Pose_MAGICAL = 103103;
 			public const int InDunRewardCountType_800 = 103104;
+			public const int GuildColonyWarpFlag = 103127;
 		}
 
 		public static class Item
@@ -10254,6 +10283,10 @@ namespace Melia.Shared.Const
 			public const int RareOption_MSPD = 103064;
 			public const int TempUseItem = 103088;
 			public const int SkillWidthRange = 103097;
+			public const int DynamicLifeTime = 103119;
+			public const int DynamicCalcLifeTimeFunc = 103120;
+			public const int ItemGuildCoolDown = 103124;
+			public const int GuildCoolDownGroup = 103125;
 		}
 
 		public static class Party
@@ -17114,6 +17147,10 @@ namespace Melia.Shared.Const
 			public const int COLLECT_50_REWARD = 103100;
 			public const int EVENT_1810_UNIQUE_PC_YDAY = 103110;
 			public const int EVENT_1810_UNIQUE_PC_STATE = 103111;
+			public const int GUILD_QUEST_WEEK1 = 103117;
+			public const int GUILD_QUEST_WEEK1_R = 103118;
+			public const int MG_Last_MISSION_UPHILL_DEFFENSE_EVENT_1810 = 103135;
+			public const int EVENT_1812_STEAM_RESET = 103268;
 		}
 #pragma warning restore IDE1006
 	}

@@ -418,7 +418,7 @@
 { jobId: 3015, skillId: 31104, skillName: "Cannon Blast", unlockCircle: 1, levelsPerCircle: 5, maxLevel: 20 },
 { jobId: 3015, skillId: 31105, skillName: "Cannon Barrage", unlockCircle: 2, levelsPerCircle: 5, maxLevel: 20 },
 { jobId: 3015, skillId: 31106, skillName: "SmokeGrenade", unlockCircle: 2, levelsPerCircle: 5, maxLevel: 20 },
-{ jobId: 3015, skillId: 31107, skillName: "Bazooka", unlockCircle: 2, levelsPerCircle: 5, maxLevel: 20 },
+{ jobId: 3015, skillId: 31107, skillName: "Bazooka", unlockCircle: 2, levelsPerCircle: 1, maxLevel: 1 },
 { jobId: 3015, skillId: 31108, skillName: "Sweeping Cannon", unlockCircle: 3, levelsPerCircle: 5, maxLevel: 20 },
 { jobId: 3016, skillId: 31201, skillName: "Covering Fire", unlockCircle: 1, levelsPerCircle: 5, maxLevel: 20 },
 { jobId: 3016, skillId: 31202, skillName: "Headshot", unlockCircle: 1, levelsPerCircle: 5, maxLevel: 20 },

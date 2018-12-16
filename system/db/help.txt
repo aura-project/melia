@@ -74,6 +74,7 @@
 { id: 160, name: "TUTO_ICOR", dbSave: true, basicHelp: false },
 { id: 161, name: "TUTO_ITEM_LINK", dbSave: true, basicHelp: false },
 { id: 162, name: "TUTO_BEAUTY_SHOP", dbSave: true, basicHelp: false },
+{ id: 163, name: "TUTO_CREDIT_RATING", dbSave: true, basicHelp: false },
 { id: 200, name: "TUTO_ESCAPE_ORB", dbSave: true, basicHelp: true },
 { id: 201, name: "TUTO_STREET_STALL", dbSave: true, basicHelp: true },
 { id: 202, name: "TUTO_GEM_ROASTING", dbSave: true, basicHelp: false },

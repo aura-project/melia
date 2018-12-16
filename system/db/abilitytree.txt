@@ -396,6 +396,7 @@
 { category: "Sorcerer", jobId: 2006, abilityId: 208010, name: "Desmodus: Enhance", maxLevel: 100, priceTime: 'ABIL_7RANK_PRICE', unlock: 'UNLOCK_ABIL_CIRCLE("Char2_6", 3)' },
 { category: "Sorcerer", jobId: 2006, abilityId: 208011, name: "Riding: Increase Stats", maxLevel: 100, priceTime: 'ABIL_6RANK_PRICE', unlock: 'UNLOCK_ABIL_CIRCLE("Char2_6", 2)' },
 { category: "Sorcerer", jobId: 2006, abilityId: 208013, name: "Summon Salamion: Heat", maxLevel: 10, priceTime: 'ABIL_7RANK_BUFF_PRICE', unlock: 'UNLOCK_ABIL_CIRCLE("Char2_6", 3)' },
+{ category: "Sorcerer", jobId: 2006, abilityId: 208014, name: "Summoning: Overwork", maxLevel: 10, priceTime: 'ABIL_7RANK_NORMAL_PRICE', unlock: 'UNLOCK_ABIL_CIRCLE("Char2_6", 3)' },
 
 // Linker
 //---------------------------------------------------------------------------
@@ -797,6 +798,7 @@
 { category: "Cannoneer", jobId: 3015, abilityId: 312019, name: "Siege Burst: Critical", maxLevel: 5, priceTime: 'ABIL_9RANK_NORMAL_PRICE', unlock: 'UNLOCK_ABIL_CIRCLE("Char3_15", 3)' },
 { category: "Cannoneer", jobId: 3015, abilityId: 312020, name: "Cannon Barrage: Weight Reduction", maxLevel: 5, priceTime: 'ABIL_9RANK_NORMAL_PRICE', unlock: 'UNLOCK_ABIL_CIRCLE("Char3_15", 3)' },
 { category: "Cannoneer", jobId: 3015, abilityId: 312021, name: "Cannoneer: Detonate", maxLevel: 10, priceTime: 'ABIL_10RANK_FOR67_PRICE', unlock: 'UNLOCK_ABIL_CIRCLE_AND_RANK("Char3_15", 3)' },
+{ category: "Cannoneer", jobId: 3015, abilityId: 312022, name: "Bazooka: Steady Fire", maxLevel: 1, priceTime: 'ABIL_8RANK_NORMAL_PRICE', unlock: 'UNLOCK_ABIL_CIRCLE("Char3_15", 2)' },
 
 // Musketeer
 //---------------------------------------------------------------------------
@@ -1063,7 +1065,7 @@
 
 // Inquisitor
 //---------------------------------------------------------------------------
-{ category: "Inquisitor", jobId: 4016, abilityId: 415001, name: "Inquisitor: Burn", maxLevel: 20, priceTime: 'ABIL_8RANK_BUFF_PRICE', unlock: 'UNLOCK_ABIL_CIRCLE("Char4_16", 1)' },
+{ category: "Inquisitor", jobId: 4016, abilityId: 415001, name: "Inquisitor: Burn", maxLevel: 1, priceTime: 'ABIL_8RANK_NORMAL_PRICE', unlock: 'UNLOCK_ABIL_CIRCLE("Char4_16", 1)' },
 { category: "Inquisitor", jobId: 4016, abilityId: 415006, name: "Pear of Anguish: Enhance", maxLevel: 100, priceTime: 'ABIL_8RANK_PRICE', unlock: 'UNLOCK_ABIL_CIRCLE("Char4_16", 1)' },
 { category: "Inquisitor", jobId: 4016, abilityId: 415008, name: "Breaking Wheel: Additional Damage", maxLevel: 1, priceTime: 'ABIL_8RANK_NORMAL_PRICE', unlock: 'UNLOCK_ABIL_CIRCLE("Char4_16", 1)' },
 { category: "Inquisitor", jobId: 4016, abilityId: 415009, name: "Inquisitor: Darkness Resistance", maxLevel: 20, priceTime: 'ABIL_INQUISITOR9_PRICE', unlock: 'UNLOCK_ABIL_CIRCLE("Char4_16", 1)' },
