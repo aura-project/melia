@@ -2,8 +2,8 @@
 //--- 010 Editor v8.0 Binary Template
 //
 //      File: CB_COMMANDER_CREATE.bt
-//   Authors: exec
-//   Version: i174379
+//   Authors: exec, celophi
+//   Version: i225009
 //   Purpose: 
 //  Category: 
 // File Mask: 
@@ -11,6 +11,7 @@
 //   History: 
 //   - i170175: startingCity was removed
 //   - i170175: b1 was added?
+//   - i225009: added lodge number the created character belongs to.
 //------------------------------------------------
 
 #include "common.bt"
@@ -22,7 +23,6 @@ char name[65];
 short job;
 byte gender;
 position pos;
-byte hair;
 //int startingCity; // i11025 (2016-02-26)
-byte b1;
-
+uint lodge;
+ushort hair;
