@@ -11,23 +11,26 @@
 //   History: 
 //   - i170175: bin1, mac, and l1 were added
 //   - i174236: bin2+3 were added
+//   - i232364: heavy restructure
 //------------------------------------------------
 
 #include "common.bt"
 
 ClientHeaderFixed header;
 
-short s1;
-short s2;
-int64 accountId;
-int64 characterId;
-char accountName[33];
-byte bin2[23];
-
-byte unk[1037];
+byte unk[1024];
 
 char sessionKey[64];
-byte bin1[4];
+char accountName[33];
+byte bin2[23];
 char mac[32];
-int64 l1; // same object id (?) that appears in BC_LOGINOK
 byte bin3[8];
+int64 l1; // same object id (?) that appears in BC_LOGINOK
+byte bin5[8];
+int64 accountId;
+int64 characterId;
+byte bin1[4];
+byte bin4[8]; // this was at the start of unk before
+short s2;
+short s1;
+byte bin6[6];

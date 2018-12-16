@@ -46,7 +46,8 @@ namespace Melia.Login.Network.Helpers
 			foreach (var jobId in jobIds)
 				packet.PutShort((short)jobId);
 
-			packet.PutInt(0);
+			packet.PutInt(0); // i1
+			packet.PutInt(0); // i2
 		}
 	}
 

@@ -21,6 +21,8 @@ namespace Melia.Shared.Network.Helpers
 			packet.PutByte(0);
 			packet.PutInt(appearancePc.Level);
 
+			packet.PutInt(0); // i8
+
 			// Items
 			var equipIds = appearancePc.GetEquipIds();
 			if (equipIds.Length != Items.EquipSlotCount)
@@ -49,8 +51,10 @@ namespace Melia.Shared.Network.Helpers
 				packet.PutByte((appearancePc.VisibleHats & HatVisibleStates.Hat1) != 0);
 				packet.PutByte((appearancePc.VisibleHats & HatVisibleStates.Hat2) != 0);
 				packet.PutByte((appearancePc.VisibleHats & HatVisibleStates.Hat3) != 0);
-				packet.PutShort(0);
+				packet.PutShort(0); // s2
 			}
+
+			packet.PutInt(0); // i9
 		}
 	}
 

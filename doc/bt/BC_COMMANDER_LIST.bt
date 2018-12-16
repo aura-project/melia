@@ -50,6 +50,7 @@ typedef struct
     short jobIds[jobIdCount];
     
     int i1;
+    int i2;
 }
 BARRACK_PC <read=readBARRACK_PC>;
 

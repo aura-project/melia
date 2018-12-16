@@ -3,12 +3,13 @@
 //
 //      File: ZC_ITEM_REMOVE.bt
 //   Authors: exec
-//   Version: i170175
+//   Version: i232364
 //   Purpose: 
 //  Category: 
 // File Mask: 
 //  ID Bytes: 
 //   History: 
+//   - i232364: i1 added
 //------------------------------------------------
 
 #include "common.bt"
@@ -17,5 +18,6 @@ ServerHeaderFixed header;
 
 int64 worldId;
 int amount;
+int i1;
 byte msg;
 byte invType;

@@ -178,7 +178,8 @@ namespace Melia.Login.Network
 			var bx = packet.GetFloat();
 			var by = packet.GetFloat();
 			var bz = packet.GetFloat();
-			var hair = packet.GetByte();
+			var lodge = packet.GetInt();
+			var hair = packet.GetByte(); // short?
 			var b1 = packet.GetByte();
 
 			// Check job

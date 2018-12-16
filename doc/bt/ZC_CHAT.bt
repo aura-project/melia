@@ -3,7 +3,7 @@
 //
 //      File: ZC_CHAT.bt
 //   Authors: exec
-//   Version: i170175
+//   Version: i232364
 //   Purpose: 
 //  Category: 
 // File Mask: 
@@ -11,6 +11,7 @@
 //   History: 
 //   - i11257:  i3 was added
 //   - i170175: bin2 was added
+//   - i232364: bin2 moved?, gender and hair now shorts?, job2 added?
 //------------------------------------------------
 
 #include "common.bt"
@@ -22,12 +23,13 @@ char teamName[64];
 char name[65];
 byte b1;
 short job;
+int job2;
 int i1;
-byte gender;
-byte hair;
+short gender;
+short hair;
 byte bin1[2];
+byte bin2[14];
 int i2;
 int i3;
 float displayTime;
-byte bin2[16];
 string message;

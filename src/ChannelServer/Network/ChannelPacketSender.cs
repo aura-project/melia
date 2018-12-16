@@ -544,10 +544,12 @@ namespace Melia.Channel.Network
 			packet.PutString(character.Name, 65);
 			packet.PutByte(0); // -11, -60, -1, -19, 1
 			packet.PutShort((short)character.JobId);
+			packet.PutInt((short)character.JobId);
 			packet.PutInt(0); // 1, 10, 11
-			packet.PutByte((byte)character.Gender);
-			packet.PutByte((byte)character.Hair);
+			packet.PutShort((byte)character.Gender);
+			packet.PutShort((byte)character.Hair);
 			packet.PutEmptyBin(2);
+			packet.PutEmptyBin(14);
 			packet.PutInt(0); // 628051
 
 			// [i11257 (2016-03-25)] ?
@@ -556,7 +558,6 @@ namespace Melia.Channel.Network
 			}
 
 			packet.PutFloat(0); // Display time in seconds, min cap 5s
-			packet.PutEmptyBin(16); // [i170175] ?
 			packet.PutString(message);
 
 			character.Map.Broadcast(packet, character);
@@ -638,6 +639,7 @@ namespace Melia.Channel.Network
 
 			packet.PutLong(worldId);
 			packet.PutInt(amount);
+			packet.PutInt(0); // i1
 			packet.PutByte((byte)msg);
 			packet.PutByte((byte)invType);
 
