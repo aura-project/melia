@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginServer", "src\LoginServer\LoginServer.csproj", "{7C85948A-9771-478E-98BB-97D6D2D60A19}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoginServer", "src\LoginServer\LoginServer.csproj", "{7C85948A-9771-478E-98BB-97D6D2D60A19}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "src\Shared\Shared.csproj", "{85BDC651-D262-4A0F-A415-609369F78837}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared", "src\Shared\Shared.csproj", "{85BDC651-D262-4A0F-A415-609369F78837}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebServer", "src\WebServer\WebServer.csproj", "{81FD01FA-E633-4426-AD18-46FC607721A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebServer", "src\WebServer\WebServer.csproj", "{81FD01FA-E633-4426-AD18-46FC607721A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChannelServer", "src\ChannelServer\ChannelServer.csproj", "{A29F2142-7252-4A6A-8644-5F5B29D37E31}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChannelServer", "src\ChannelServer\ChannelServer.csproj", "{A29F2142-7252-4A6A-8644-5F5B29D37E31}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.ChannelServer", "src\Test.ChannelServer\Test.ChannelServer.csproj", "{B818F174-3151-4FC3-99EB-2DA2A8465A50}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test.ChannelServer", "src\Test.ChannelServer\Test.ChannelServer.csproj", "{B818F174-3151-4FC3-99EB-2DA2A8465A50}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.Shared", "src\Test.Shared\Test.Shared.csproj", "{0820E965-9D9A-462D-9D57-1B1207831BD9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test.Shared", "src\Test.Shared\Test.Shared.csproj", "{0820E965-9D9A-462D-9D57-1B1207831BD9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Swebs", "src\Swebs\Swebs.csproj", "{5CEEB721-6130-4500-91DA-573220120337}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{0820E965-9D9A-462D-9D57-1B1207831BD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0820E965-9D9A-462D-9D57-1B1207831BD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0820E965-9D9A-462D-9D57-1B1207831BD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CEEB721-6130-4500-91DA-573220120337}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CEEB721-6130-4500-91DA-573220120337}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CEEB721-6130-4500-91DA-573220120337}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CEEB721-6130-4500-91DA-573220120337}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -208,7 +208,7 @@ namespace Melia.Shared
 		public void NavigateToRoot()
 		{
 			// Go back max 2 folders, the bins should be in [root]/bin/(Debug|Release)
-			for (var i = 0; i < 3; ++i)
+			for (var i = 0; i < 6; ++i)
 			{
 				if (Directory.Exists("system") && Directory.Exists("user"))
 				{
