@@ -100,3 +100,4 @@ addnpc(147393, "ETC_20150317_009082", "f_siauliai_west", 186, 210, -857, 45, "np
 --- Lv1 Treasure Chest --- 
 addnpc(147392, "ETC_20150317_009100", "f_siauliai_west", 1346, 210, -1087, 45, "npc_dummy")
 
+addspawn("spawn1", "f_siauliai_west", "Kepa", -673, -600, -1087, -1011, 10, 2, 15, 0, 0.0,0.0,0.0, 45);

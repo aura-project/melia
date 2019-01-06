@@ -32,6 +32,12 @@ namespace Melia.Channel.World
 		/// </summary>
 		private Dictionary<int, Monster> _monsters;
 
+
+		/// <summary>
+		/// Collection of Spawn Zones
+		/// </summary>
+		private List<SpawnZone> _spawns;
+
 		/// <summary>
 		/// Map name.
 		/// </summary>
@@ -54,6 +60,7 @@ namespace Melia.Channel.World
 		{
 			_characters = new Dictionary<int, Character>();
 			_monsters = new Dictionary<int, Monster>();
+			_spawns = new List<SpawnZone>();
 
 			this.Id = id;
 			this.Name = name;
@@ -93,6 +100,12 @@ namespace Melia.Channel.World
 				foreach (var character in _characters.Values)
 					character.LookAround();
 			}
+		}
+
+		private void ProcessMonsters()
+		{
+			foreach (var monster in _monsters.Values)
+				monster.Process();
 		}
 
 		/// <summary>
@@ -288,6 +301,22 @@ namespace Melia.Channel.World
 				foreach (var character in _characters.Values.Where(a => (includeSource || a != source) && a.Position.InRange2D(source.Position, VisibleRange)))
 					character.Connection.Send(packet);
 			}
+		}
+
+
+		public void AddSpawnZone(SpawnData sData)
+		{
+			SpawnZone spawnZone = new SpawnZone(sData);
+			if (spawnZone == null)
+				return;
+
+			lock (_spawns)
+			{
+				spawnZone.Id = _spawns.Count;
+				_spawns.Add(spawnZone);
+
+			}
+			spawnZone.Init();
 		}
 	}
 
