@@ -155,16 +155,16 @@ namespace Melia.Login.Database
 					cmd.Set("bz", character.BarrackPosition.Z);
 
 					cmd.Set("hp", character.Hp);
-					cmd.Set("maxHp", character.MaxHp);
+					cmd.Set("hpRate", character.HpRateByJob);
 					cmd.Set("sp", character.Sp);
-					cmd.Set("maxSp", character.MaxSp);
+					cmd.Set("spRate", character.SpRateByJob);
 					cmd.Set("stamina", character.Stamina);
-					cmd.Set("maxStamina", character.MaxStamina);
-					cmd.Set("str", character.Str);
-					cmd.Set("con", character.Con);
-					cmd.Set("int", character.Int);
-					cmd.Set("spr", character.Spr);
-					cmd.Set("dex", character.Dex);
+					cmd.Set("staminaByJob", character.StaminaByJob);
+					cmd.Set("strByJob", character.StrByJob);
+					cmd.Set("conByJob", character.ConByJob);
+					cmd.Set("intByJob", character.IntByJob);
+					cmd.Set("sprByJob", character.SprByJob);
+					cmd.Set("dexByJob", character.DexByJob);
 					cmd.Set("maxExp", LoginServer.Instance.Data.ExpDb.GetNextExp(1));
 
 					cmd.Set("barrackLayer", character.BarrackLayer);

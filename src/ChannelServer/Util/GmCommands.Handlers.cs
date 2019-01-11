@@ -520,6 +520,7 @@ namespace Melia.Channel.Util
 
 			target.Speed = speed;
 			Send.ZC_MOVE_SPEED(target);
+			Send.ZC_OBJECT_PROPERTY(target, PropertyId.PC.MSPD);
 
 			if (sender == target)
 			{

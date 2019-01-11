@@ -114,17 +114,22 @@ namespace Melia.Channel.Database
 					character.Exp = reader.GetInt32("exp");
 					character.MaxExp = reader.GetInt32("maxExp");
 					character.TotalExp = reader.GetInt32("totalExp");
-					character.MaxHp = reader.GetInt32("maxHp");
-					character.Hp = reader.GetInt32("hp");
-					character.MaxSp = reader.GetInt32("maxSp");
-					character.Sp = reader.GetInt32("sp");
-					character.MaxStamina = reader.GetInt32("maxStamina");
+					character.StaminaByJob = reader.GetInt32("staminaByJob");
 					character.Stamina = reader.GetInt32("stamina");
-					character.Str = reader.GetInt32("str");
-					character.Con = reader.GetInt32("con");
-					character.Int = reader.GetInt32("int");
-					character.Spr = reader.GetInt32("spr");
-					character.Dex = reader.GetInt32("dex");
+					character.StrInvested = reader.GetInt32("str");
+					character.StrByJob = reader.GetInt32("strByJob");
+					character.ConInvested = reader.GetInt32("con");
+					character.ConByJob = reader.GetInt32("conByJob");
+					character.IntInvested = reader.GetInt32("int");
+					character.IntByJob = reader.GetInt32("intByJob");
+					character.SprInvested = reader.GetInt32("spr");
+					character.SprByJob = reader.GetInt32("sprByJob");
+					character.DexInvested = reader.GetInt32("dex");
+					character.DexByJob = reader.GetInt32("dexByJob");
+					character.HpRateByJob = reader.GetFloat("hpRate");
+					character.SpRateByJob = reader.GetFloat("spRate");
+					character.Hp = reader.GetInt32("hp");
+					character.Sp = reader.GetInt32("sp");
 					character.StatByLevel = reader.GetInt32("statByLevel");
 					character.StatByBonus = reader.GetInt32("statByBonus");
 					character.UsedStat = reader.GetInt32("usedStat");
@@ -135,6 +140,7 @@ namespace Melia.Channel.Database
 					var z = reader.GetFloat("z");
 					character.Position = new Position(x, y, z);
 					character.Direction = new Direction(0);
+					
 				}
 			}
 
@@ -399,16 +405,21 @@ namespace Melia.Channel.Database
 				cmd.Set("maxExp", character.MaxExp);
 				cmd.Set("totalExp", character.TotalExp);
 				cmd.Set("hp", character.Hp);
-				cmd.Set("maxHp", character.MaxHp);
+				cmd.Set("hpRate", character.HpRateByJob);
 				cmd.Set("sp", character.Sp);
-				cmd.Set("maxSp", character.MaxSp);
+				cmd.Set("spRate", character.SpRateByJob);
 				cmd.Set("stamina", character.Stamina);
-				cmd.Set("maxStamina", character.MaxStamina);
-				cmd.Set("str", character.Str);
-				cmd.Set("con", character.Con);
-				cmd.Set("int", character.Int);
-				cmd.Set("spr", character.Spr);
-				cmd.Set("dex", character.Dex);
+				cmd.Set("staminaByJob", character.StaminaByJob);
+				cmd.Set("str", character.StrInvested);
+				cmd.Set("strByJob", character.StrByJob);
+				cmd.Set("con", character.ConInvested);
+				cmd.Set("conByJob", character.ConByJob);
+				cmd.Set("int", character.IntInvested);
+				cmd.Set("intByJob", character.IntByJob);
+				cmd.Set("spr", character.SprInvested);
+				cmd.Set("sprByJob", character.SprByJob);
+				cmd.Set("dex", character.DexInvested);
+				cmd.Set("dexByJob", character.DexByJob);
 				cmd.Set("statByLevel", character.StatByLevel);
 				cmd.Set("statByBonus", character.StatByBonus);
 				cmd.Set("usedStat", character.UsedStat);

@@ -113,14 +113,19 @@ namespace Melia.Login.World
 		}
 
 		/// <summary>
+		/// Hp multiplicator from the basic job.
+		/// </summary>
+		public float HpRateByJob { get; set; }
+
+		/// <summary>
 		/// Current HP.
 		/// </summary>
 		public int Hp { get; set; }
 
 		/// <summary>
-		/// Maximum HP.
+		/// Sp multiplicator from the basic job.
 		/// </summary>
-		public int MaxHp { get; set; }
+		public float SpRateByJob { get; set; }
 
 		/// <summary>
 		/// Current SP.
@@ -128,9 +133,9 @@ namespace Melia.Login.World
 		public int Sp { get; set; }
 
 		/// <summary>
-		/// Maximum SP.
+		/// Gets or set Job Stamina.
 		/// </summary>
-		public int MaxSp { get; set; }
+		public int StaminaByJob { get; set; }
 
 		/// <summary>
 		/// Current stamina.
@@ -138,34 +143,29 @@ namespace Melia.Login.World
 		public int Stamina { get; set; }
 
 		/// <summary>
-		/// Maximum stamina.
+		/// Gets or sets character's Item Bonus strength (STR).
 		/// </summary>
-		public int MaxStamina { get; set; }
+		public int StrByJob { get; set; }
 
 		/// <summary>
-		/// Gets or sets character's strength (STR).
+		/// Gets or sets character's Job vitality (CON).
 		/// </summary>
-		public int Str { get; set; }
+		public int ConByJob { get; set; }
 
 		/// <summary>
-		/// Gets or sets character's vitality (CON).
+		/// Gets or sets character's Job intelligence (INT).
 		/// </summary>
-		public int Con { get; set; }
+		public int IntByJob { get; set; }
 
 		/// <summary>
-		/// Gets or sets character's intelligence (INT).
+		/// Gets or sets character's Job spirit (SPR/MNA).
 		/// </summary>
-		public int Int { get; set; }
+		public int SprByJob { get; set; }
 
 		/// <summary>
-		/// Gets or sets character's spirit (SPR/MNA).
+		/// Gets or sets character's Job agility (DEX).
 		/// </summary>
-		public int Spr { get; set; }
-
-		/// <summary>
-		/// Gets or sets character's agility (DEX).
-		/// </summary>
-		public int Dex { get; set; }
+		public int DexByJob { get; set; }
 
 		/// <summary>
 		/// Creates new character.

@@ -1230,22 +1230,32 @@ namespace Melia.Channel.Scripting
 			var conn = this.GetConnectionFromState(L);
 			var character = conn.SelectedCharacter;
 
-			character.StatByLevel += character.Str - 1;
-			character.StatByLevel += character.Con - 1;
-			character.StatByLevel += character.Int - 1;
-			character.StatByLevel += character.Spr - 1;
-			character.StatByLevel += character.Dex - 1;
+			character.StatByLevel += character.StrByJob - 1;
+			character.StatByLevel += character.ConByJob - 1;
+			character.StatByLevel += character.IntByJob - 1;
+			character.StatByLevel += character.SprByJob - 1;
+			character.StatByLevel += character.DexByJob - 1;
 			character.UsedStat = 0;
 
-			character.Str = 1;
-			character.Con = 1;
-			character.Int = 1;
-			character.Spr = 1;
-			character.Dex = 1;
+			character.StrInvested = 0;
+			character.ConInvested = 0;
+			character.IntInvested = 0;
+			character.SprInvested = 0;
+			character.DexInvested = 0;
+
+			character.StrByJob = 1;
+			character.ConByJob = 1;
+			character.IntByJob = 1;
+			character.SprByJob = 1;
+			character.DexByJob = 1;
 
 			Send.ZC_OBJECT_PROPERTY(character,
-				PropertyId.PC.STR, PropertyId.PC.CON, PropertyId.PC.INT, PropertyId.PC.MNA, PropertyId.PC.DEX,
-				PropertyId.PC.StatByLevel, PropertyId.PC.StatByBonus, PropertyId.PC.UsedStat
+					PropertyId.PC.STR, PropertyId.PC.STR_STAT, PropertyId.PC.STR_JOB, PropertyId.PC.CON, PropertyId.PC.CON_STAT, PropertyId.PC.CON_JOB,
+					PropertyId.PC.INT, PropertyId.PC.INT_STAT, PropertyId.PC.INT_JOB, PropertyId.PC.MNA, PropertyId.PC.MNA_STAT, PropertyId.PC.MNA_JOB,
+					PropertyId.PC.DEX, PropertyId.PC.DEX_STAT, PropertyId.PC.DEX_JOB, PropertyId.PC.UsedStat, PropertyId.PC.MINPATK,
+					PropertyId.PC.MAXPATK, PropertyId.PC.MINMATK, PropertyId.PC.MAXMATK, PropertyId.PC.MINPATK_SUB, PropertyId.PC.MAXPATK_SUB,
+					PropertyId.PC.CRTATK, PropertyId.PC.HR, PropertyId.PC.DR, PropertyId.PC.BLK_BREAK, PropertyId.PC.BLK, PropertyId.PC.RHP,
+					PropertyId.PC.RSP, PropertyId.PC.MHP, PropertyId.PC.MSP
 			);
 
 			return 0;

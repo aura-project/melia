@@ -38,12 +38,12 @@ namespace Melia.Shared.Data.Database
 		public int GetInitialHp()
 		{
 			var rate = this.HpRate;
-			var con = this.Con;
+			var stat = this.Con;
 
-			var levelHp = Math.Floor(400 * rate);
-			var conHp = Math.Floor(((con * 0.005f) + (Math.Floor(con / 10.0f) * 0.015f)) * levelHp);
+			var byJob = Math.Floor(400 * rate);
+			var byStats = Math.Floor(((stat * 0.005f) + (Math.Floor(stat / 10.0f) * 0.015f)) * byJob);
 
-			return (int)(levelHp + conHp);
+			return (int)(byJob + byStats);
 		}
 
 		/// <summary>
@@ -53,12 +53,12 @@ namespace Melia.Shared.Data.Database
 		public int GetInitialSp()
 		{
 			var rate = this.SpRate;
-			var spr = this.Spr;
+			var stat = this.Spr;
 
-			var levelSp = Math.Floor(200 * rate);
-			var sprSp = Math.Floor(((spr * 0.005) + (Math.Floor(spr / 10.0) * 0.015)) * levelSp);
+			var byJob = Math.Floor(200 * rate);
+			var byStats = Math.Floor(((stat * 0.005f) + (Math.Floor(stat / 10.0f) * 0.015f)) * byJob);
 
-			return (int)(levelSp + sprSp);
+			return (int)(byJob + byStats);
 		}
 	}
 
@@ -78,11 +78,11 @@ namespace Melia.Shared.Data.Database
 			info.Initial = entry.ReadString("initial");
 			info.Name = entry.ReadString("name");
 			info.Rank = entry.ReadInt("rank");
-			info.Str = entry.ReadInt("str", 1);
-			info.Con = entry.ReadInt("con", 1);
-			info.Int = entry.ReadInt("int", 1);
-			info.Spr = entry.ReadInt("spr", 1);
-			info.Dex = entry.ReadInt("dex", 1);
+			info.Str = entry.ReadInt("str", 0);
+			info.Con = entry.ReadInt("con", 0);
+			info.Int = entry.ReadInt("int", 0);
+			info.Spr = entry.ReadInt("spr", 0);
+			info.Dex = entry.ReadInt("dex", 0);
 			info.HpRate = entry.ReadFloat("hpRate", 1);
 			info.SpRate = entry.ReadFloat("spRate", 1);
 			info.Stamina = entry.ReadInt("stamina", 25000);
