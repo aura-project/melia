@@ -35,11 +35,10 @@ namespace Melia.Login.Network
 			var packet = new Packet(Op.BC_LOGINOK);
 			packet.PutShort(0);
 			packet.PutLong(conn.Account.Id);
-			packet.PutString(conn.Account.Name, 33);
-			packet.PutEmptyBin(23);
+			packet.PutString(conn.Account.Name, 56);
 			packet.PutInt(3); // accountPrivileges? <= 3 enables a kind of debug context menu
 			packet.PutString(conn.SessionKey, 64);
-			packet.PutInt(4475);
+			packet.PutInt(conn.IntegritySeed);
 			packet.PutLong(0);
 
 			conn.Send(packet);

@@ -4,6 +4,7 @@
 using System;
 using System.Net;
 using System.Net.Sockets;
+using System.Security.Cryptography;
 using Melia.Shared.Network.Crypto;
 using Melia.Shared.Util;
 
@@ -46,7 +47,17 @@ namespace Melia.Shared.Network
 		/// <summary>
 		/// Session key for this connection.
 		/// </summary>
-		public string SessionKey { get; set; }
+		public readonly string SessionKey;
+
+		/// <summary>
+		/// Randomly generated value used for checking the integrity of IPF archives.
+		/// </summary>
+		public readonly int IntegritySeed;
+
+		/// <summary>
+		/// When set to 'true', client packets are ignored.
+		/// </summary>
+		public bool IgnorePackets = false;
 
 		/// <summary>
 		/// Creates new connection.
@@ -59,6 +70,14 @@ namespace Melia.Shared.Network
 
 			this.State = ConnectionState.Open;
 			this.Address = "?:?";
+			this.IntegritySeed = RandomProvider.Get().Next();
+
+			// Generates a session key based on a GUID.
+			using (var sha = new SHA1Managed())
+			{
+				var hash = sha.ComputeHash(Guid.NewGuid().ToByteArray());
+				this.SessionKey = "*" + BitConverter.ToString(hash).Replace("-", String.Empty);
+			}
 		}
 
 		/// <summary>
@@ -125,7 +144,7 @@ namespace Melia.Shared.Network
 					Log.Info("Connection was closed from '{0}'.", this.Address);
 					return;
 				}
-
+				
 				while (read < length)
 				{
 					var packetLength = BitConverter.ToUInt16(_buffer, read);
@@ -189,7 +208,10 @@ namespace Melia.Shared.Network
 						// Handle
 						try
 						{
-							this.HandlePacket(packet);
+							if (!this.IgnorePackets)
+							{
+								this.HandlePacket(packet);
+							}
 						}
 						catch (Exception ex)
 						{

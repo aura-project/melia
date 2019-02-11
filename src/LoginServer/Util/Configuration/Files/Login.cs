@@ -18,9 +18,23 @@ namespace Melia.Login.Util.Configuration.Files
 		/// </summary>
 		public Location StartLocation { get; protected set; }
 
+		/// <summary>
+		/// When enabled, client integrity checks are applied.
+		/// </summary>
+		public bool VerifyIpf { get; private set; }
+
+		/// <summary>
+		/// Checksum to prevent clients using modified or out-dated IPF files.
+		/// </summary>
+		public string IpfChecksum { get; private set; }
+
 		public void Load()
 		{
 			this.Require("system/conf/login.conf");
+
+			this.IpfChecksum = this.GetString("ipf_checksum", String.Empty);
+			this.VerifyIpf = this.GetBool("ipf_verifying", false);
+			this.IpfChecksum = this.GetString("ipf_checksum");
 
 			this.StartLocation = this.LoadStartLocation();
 		}

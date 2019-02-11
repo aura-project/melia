@@ -2,27 +2,24 @@
 //--- 010 Editor v8.0 Binary Template
 //
 //      File: BC_LOGINOK.bt
-//   Authors: exec
-//   Version: i170175
+//   Authors: exec, celophi
+//   Version: i233292
 //   Purpose: 
 //  Category: 
 // File Mask: 
 //  ID Bytes: 
-//   History: 
-//   - i10725:  i2 was added
+//   History:
 //   - i170175: l1 was added
-//   - i174236: bin1 was added
 //------------------------------------------------
 
 #include "common.bt"
 
 ServerHeaderFixed header;
 
-short s1;
+short groupId; // Server group ID.
 int64 accountId;
-char accountName[33]; // accountId as string?
-byte bin1[23]; // maybe accountName got longer?
+char accountName[56]; // accountId as string?
 int accountPrivileges;
 char sessionKey[64]; // ?
-int i2;
+int integritySeed; // Random number used for checking IPF files.
 int64 l1; // some object id?

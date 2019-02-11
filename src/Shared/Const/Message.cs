@@ -36,6 +36,7 @@ namespace Melia.Shared.Const
 		UnableToDeletePartyLeader = 25,
 		NotCBTUser = 26,
 		RatedEsrbTeen = 27,
+		InvalidIpf = 29, // Client IPF files are invalid.
 
 		// ...
 	}
